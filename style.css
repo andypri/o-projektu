@@ -6,3 +6,102 @@ html {
 ::before {
   box-sizing: inherit;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(#aff9a9, #9ef15f);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #444544;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav {
+  width: 100%;
+  height: 4rem;
+  background: #444544;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav__item {
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin: 0.25rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 0.3rem;
+}
+
+.nav__item:hover {
+  background-color: #55f155;
+  color: #444544;
+}
+
+.text {
+  padding: 2rem;
+}
+
+.link--anti-littering {
+  color: #444544;
+}
+
+.link--anti-littering:hover {
+  color: #0f0f0f;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2,
+h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.625rem;
+}
+
+.text-container {
+  display: flex;
+}
+
+.text__image {
+  flex-basis: 30%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding-top: 2rem;
+}
+
+.image {
+  width: 100%;
+  border-radius: 0.3rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.text__detail {
+  flex-basis: 70%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding: 2rem;
+}
+
+.link--github {
+  text-decoration: none;
+  display: block;
+  padding: 1rem 2rem;
+  color: white;
+  background-color: #444544;
+  width: 20%;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 0.3rem;
+}
+
+.link--github:hover {
+  background-color: #55f155;
+  color: #444544;
+}

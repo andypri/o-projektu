@@ -6,63 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TravelTree</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <nav class="navigation">
-        <a href="market.html" class="nav__item">markét</a>
-        <a href="andy.html" class="nav__item">andy</a>
-      </nav>
-    </header>
-    <section>
-      <h1>O projektu TravelTree</h1>
-      <p>
-        V rámci našeho projektu chceme vytvořit webovou aplikaci, která po
-        zadání několika údajů uživateli spočítá, kolik kg CO<sub>2</sub> za svou
-        cestu "vyprodukuje" a zároveň toto relativně neuchopitelné číslo převést
-        na počet stromů, které budou muset toto CO<sub>2</sub> absorbovat.
-      </p>
-      <h2>A jak to bude fungovat?</h2>
-      <h3>Co musí udělat uživatel:</h3>
-      <ol>
-        <li>
-          Uživatel si v ideálním případě na mapě vybere trasu z místa A do místa
-          B nebo případně vzdálenost vyplní do textového pole.
-        </li>
-        <li>V dalším kroku uživatel zadá zvolený dopravní prostředek.</li>
-        <li>
-          V případě auta ho požádáme o vyplnění spotřeby a typu pohonu (benzín,
-          diesel, elektro aj.).
-        </li>
-      </ol>
-      <h3>Jaký bude výsledek:</h3>
-      <p>
-        Aplikace spočítá uživateli, kolik kg CO<sub>2</sub> za svou cestu
-        vyprodukuje. Protože víme, že jeden dospělý strom za 1 rok absorbuje
-        přibližne 21 kg CO<sub>2</sub>, můžeme číselnou hodnotu snadno
-        přepočítat na počet stromů a daný počet stromů zobrazit uživateli.
-      </p>
-      <p>
-        Aby naše aplikace nebyla úplně negativní a uživatele spíš motivovala, v
-        závislosti na parametrech zadaných uživatelem zobrazíme uživateli tip:
-      </p>
-      <ul>
-        <li>
-          Pokud vybere auto ke krátké cestě (např. v rámci města): "Co třeba
-          zkusit kolo?"
-        </li>
-        <li>
-          Pokud vybere auto na delší vzdálenost: "Uvažoval jsi o veřejné dopravě
-          (vlak / autobus)?"
-        </li>
-        <li>
-          Návrh akce, jak "odčinit" svou ekologickou stopu: odkaz na stránky
-          organizace na záchranu deštných pralesů nebo tip ke sběru odpadků ve
-          své ulici (<a href="http://www.predvlastnimprahem.cz/" target="_blank"
-            >Před vlastním prahem</a
-          >).
-        </li>
-      </ul>
-    </section>
+    <div class="content">
+      <header>
+        <nav class="nav">
+          <a href="market.html" class="nav__item">markét</a>
+          <a href="andy.html" class="nav__item">andy</a>
+        </nav>
+      </header>
+      <section class="text">
+        <h1>O projektu TravelTree</h1>
+        <p>
+          V rámci našeho projektu chceme vytvořit webovou aplikaci, která po
+          zadání několika údajů uživateli spočítá, kolik kg CO<sub>2</sub> za
+          svou cestu "vyprodukuje" a zároveň toto relativně neuchopitelné číslo
+          převést na počet stromů, které budou muset toto CO<sub>2</sub>
+          absorbovat.
+        </p>
+        <h2>A jak to bude fungovat?</h2>
+        <h3>Co musí udělat uživatel:</h3>
+        <ol>
+          <li>
+            Uživatel si v ideálním případě na mapě vybere trasu z místa A do
+            místa B nebo případně vzdálenost vyplní do textového pole.
+          </li>
+          <li>V dalším kroku uživatel zadá zvolený dopravní prostředek.</li>
+          <li>
+            V případě auta ho požádáme o vyplnění spotřeby a typu pohonu
+            (benzín, diesel, elektro aj.).
+          </li>
+        </ol>
+        <h3>Jaký bude výsledek:</h3>
+        <p>
+          Aplikace spočítá uživateli, kolik kg CO<sub>2</sub> za svou cestu
+          vyprodukuje. Protože víme, že jeden dospělý strom za 1 rok absorbuje
+          přibližne 21 kg CO<sub>2</sub>, můžeme číselnou hodnotu snadno
+          přepočítat na počet stromů a daný počet stromů zobrazit uživateli.
+        </p>
+        <p>
+          Aby naše aplikace nebyla úplně negativní a uživatele spíš motivovala,
+          v závislosti na parametrech zadaných uživatelem zobrazíme uživateli
+          tip:
+        </p>
+        <ul>
+          <li>
+            Pokud vybere auto ke krátké cestě (např. v rámci města): "Co třeba
+            zkusit kolo?"
+          </li>
+          <li>
+            Pokud vybere auto na delší vzdálenost: "Uvažoval jsi o veřejné
+            dopravě (vlak / autobus)?"
+          </li>
+          <li>
+            Návrh akce, jak "odčinit" svou ekologickou stopu: odkaz na stránky
+            organizace na záchranu deštných pralesů nebo tip ke sběru odpadků ve
+            své ulici (<a
+              class="link--anti-littering"
+              href="http://www.predvlastnimprahem.cz/"
+              target="_blank"
+              >Před vlastním prahem</a
+            >).
+          </li>
+        </ul>
+      </section>
+    </div>
   </body>
 </html>
