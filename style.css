@@ -13,6 +13,7 @@ body {
   background-image: linear-gradient(#aff9a9, #9ef15f);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  font-size: 0.8rem;
   color: #444544;
   font-family: 'Montserrat', sans-serif;
 }
@@ -31,7 +32,7 @@ body {
   text-decoration: none;
   color: white;
   margin: 0.25rem;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
@@ -44,7 +45,7 @@ body {
 }
 
 .text {
-  padding: 2rem;
+  padding: 0.325rem;
 }
 
 .link--anti-littering {
@@ -86,16 +87,19 @@ h3 {
   flex-basis: 70%;
   flex-grow: 0;
   flex-shrink: 0;
-  padding: 2rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .link--github {
   text-decoration: none;
   display: block;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   color: white;
   background-color: #444544;
-  width: 20%;
+  max-width: 60%;
   text-align: center;
   font-weight: 700;
   border-radius: 0.3rem;
@@ -104,4 +108,20 @@ h3 {
 .link--github:hover {
   background-color: #55f155;
   color: #444544;
+}
+
+/* mobile not first aneb původně jsme se chtěli 100% responzivitě věnovat až v samotném projektu, ale nakonec nám to nedalo :-) */
+@media only screen and (min-width: 960px) {
+  .text {
+    padding: 2rem;
+    font-size: 1.2rem;
+  }
+
+  .text__detail {
+    padding: 2rem;
+  }
+
+  .nav__item {
+    font-size: 1.2rem;
+  }
 }
